@@ -24,6 +24,11 @@ Unzip it and use it as a regular jekyll folder.
 $ unzip master.zip
 ```
 
+Get the required gems
+```
+$ bundle install
+```
+
 Use it!
 
 ```
