@@ -1,4 +1,19 @@
-name: Cayman
-tagline: A responsive theme for your project on GitHub Pages
+# Setup
+title:        Cayman theme
+tagline:      A responsive theme for your project on GitHub Pages
+baseurl:      ""
+paginate:     1
+url:          https://github.com/jasonlong/cayman-theme
+
+# About/contact
+author:
+  name:       Jason Long
+  url:        http://github.com/jasonlong
+  email:      youremail@domain.com
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
 markdown: redcarpet
-author: Jason Long # Blog author's name
