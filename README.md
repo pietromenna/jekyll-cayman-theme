@@ -38,7 +38,7 @@ For more details read about [Jekyll][1] on its web page.
 
 # Setup
 
-Some important configuration can be done in file `_config.yml`. Please, chec the Setup setion in this file.
+Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
 
 
 ## baseurl
