@@ -15,12 +15,12 @@ Download the theme @ http://github.com/pietromenna/jekyll-cayman-theme/archive/m
 Unzip it and use it as a regular jekyll folder.
 
 ```
-$ unzip master.zip
+$ unzip jekyll-cayman-theme-master.zip
 ```
 
 Get inside the newly extracted folder
 ```
-$ cd jekyll-cayman-theme
+$ cd jekyll-cayman-theme-master
 ```
 
 Get the required gems
