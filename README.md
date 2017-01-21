@@ -31,7 +31,7 @@ $ bundle install
 Use it!
 
 ```
-$ jekyll serve
+$ bundle exec jekyll serve
 ```
 
 For more details read about [Jekyll][1] on its web page.
