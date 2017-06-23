@@ -9,7 +9,7 @@ title: {{ site.name }}
     {% for post in site.posts %}
       <header><h2>{{ post.title }}</h2><span><small>{{ post.date | date_to_string }}</small></span></header>
       {% if forloop.first == true %}
-        {{ post.body }}
+        {{ post.content }}
       {% else %}
         {{ post.excerpt }}
         <br>
