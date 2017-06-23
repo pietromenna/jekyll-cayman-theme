@@ -5,14 +5,13 @@ date:   2017-06-23 17:50:00
 categories: main
 ---
 
-## Blarg
-
 I code a lot. 
 
 I code primarily for work and secondarily for pleasure. Often times those are reversed.
 
 I code crazy ideas. I code solid, grounded ideas. I code new, "fresh" ideas. And often I find out there are 20 other projects that are 3 years old and do it better.
 
+<!--more-->
 I code in python. I code in javascript. I code in java and ruby and bash and excel and in conversation and in _right tool for the right job_. But mainly I code in python.
 
 I commit code. I delete _lots_ of code. At some point every project has a walk of shame. I delete more than I share.
@@ -38,8 +37,6 @@ But the important thing is: I code.
 True
 >>>
 ```
-
-## Blog
 
 From time to time I feel possessed to write down something I've learned and share it with the world. 
 
