@@ -8,7 +8,7 @@ title: {{ site.name }}
   <ul class="posts">
     {% for post in site.posts %}
       <header><h2>{{ post.title }}</h2><span><small>{{ post.date | date_to_string }}</small></span></header>
-      {% if forloop.first %}
+      {% if forloop.first == true %}
         {{ post.body }}
       {% else %}
         {{ post.excerpt }}
