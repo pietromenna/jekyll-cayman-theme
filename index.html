@@ -10,7 +10,7 @@ title: {{ site.name }}
       <header><h2>{{ post.title }}</h2><span><small>{{ post.date | date_to_string }}</small></span></header>
       {% if forloop.first %}
         {{ post.body }}
-      {% else % }
+      {% else %}
         {{ post.excerpt }}
         <br>
         <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
