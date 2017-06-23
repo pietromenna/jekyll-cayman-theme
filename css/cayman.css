@@ -1,6 +1,6 @@
-.blogheader { border-bottom: 1px solid #000; }
-.blogheader > h2 { display: inline-block; }
-.blogheader span { margin-left: 25px; }
+blogheader { border-bottom: 1px solid #000; }
+blogheader > h2 { display: inline-block; }
+blogheader span { margin-left: 25px; }
 
 .highlight table td { padding: 5px; }
 
