@@ -150,7 +150,7 @@ a.nodecoration { color:inherit; text-decoration:none; }
 @media screen and (min-width: 42em) and (max-width: 64em) { .page-header { padding: 3rem 4rem; } }
 @media screen and (max-width: 42em) { .page-header { padding: 2rem 1rem; } }
 
-.project-name { margin-top: 0; margin-bottom: 0.1rem; }
+.project-name { margin-top: 0; margin-bottom: 0.1rem; color: #fff; }
 @media screen and (min-width: 64em) { .project-name { font-size: 3.25rem; } }
 @media screen and (min-width: 42em) and (max-width: 64em) { .project-name { font-size: 2.25rem; } }
 @media screen and (max-width: 42em) { .project-name { font-size: 1.75rem; } }
