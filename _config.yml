@@ -4,6 +4,8 @@ tagline:      Sometimes I take shortcuts. Sometimes they work out. Sometimes the
 baseurl:      ""
 paginate:     1
 
+excerpt_separator: "<!--more-->"
+
 # About/contact
 author:
   name:       Peter Nabicht
