@@ -5,7 +5,7 @@ date:   2017-06-28 12:00:00
 categories: python
 ---
 
-_(in which I point out a point of latency most people never think about when it comes to logging)_
+_(in which I point out a source of latency most people never think about when it comes to logging)_
 
 I do a lot of data analysis in python processing and analyzing (with many different metrics) million of records at a time.
 
