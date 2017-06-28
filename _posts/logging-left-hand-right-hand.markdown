@@ -5,11 +5,13 @@ date:   2017-06-28 12:00:00
 categories: python
 ---
 
-I do a lot of data analysis in python and more often than not this means reading, processing, analyzing (with many different metrics) millions and millions of records at a go. This means for loops with many replicated actions.
+_(in which I point out a point of latency most people never think about when it comes to logging)_
 
-So I find myself focusing on performance because any one hang-up, even if small, is magnified when mulitplied by millions.
+I do a lot of data analysis in python processing and analyzing (with many different metrics) million of records at a time.
 
-I also find myself making a lot of use of logging because one small error in logic is magnified with multiplied by millions. 
+A performance hit, even if small, is magnified when mulitplied by millions.
+
+Similarly, a logic error, even if minor, is magnified with multiplied by millions. 
 
 So, `debug(<some message>)` is liberally strewn throughout my code. With a command line or configuration change I can run a process with an log level of debug and get much better insight into what is going on. And this is great because when I'm not in debug mode I spend ~~no~~ negligible time on these debug statements. This satisfies both my requirements:
 
