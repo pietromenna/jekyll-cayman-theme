@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Left Hand Doesn't Know What the Right Hand is Doing"
+title:  "Right Hand Doesn't Know What the Left Hand is Doing"
 date:   2017-06-28 12:00:00
 categories: python
 ---
@@ -37,6 +37,35 @@ But there is a problem. For clarity, let's break these log messages down into tw
 1. Left hand: the string to format
 2. Right hand: the arguments
 
-In the above examples, the string is not formatted until the 
+In the above examples, the left hand side does not format unless one of the log handlers is handling debug statements. So, unless you are in debug there is no cost for the string format. This is great!
 
+The right side, though, is a problem.
+
+Whether or not the left side gets processed, the right side does. The arguments for the formatting get processed. This isn't a big deal if it is basic primatives, such as:
+
+```python
+logger.debug("I'm logging some dumb stuff like %d and %s", 1, 'a')
+```
+
+But it is a problem if the right hand side is more complex, such as:
+
+```python
+logger.debug("I'm logging a really big list comprehension as a string: %s" % str(x for x in range(1000000)))
+```
+
+I know. I hear you. You are saying, "who the hell would ever log a list comprehension like that?" It's illustrative. Let's take a more realistic example.
+
+```python
+logger.debug("I'm logging a custom object with its own __str__ function: %s" % str(custom_object_instance))
+```
+
+And now let's think about what the `__str__` function does. What if it does the following:
+1. create a dictionary of 30 key/values pairs where key is some string and value is a locally held variable.
+2. creates a string of that dictionary with `json.dumps` (json formatting is ungodly slow in python)
+
+This is a pretty realistic example that you could easily run across. If that object is logged 6 times in a data processing pipeline and it is done for say 1 million objects, you now are calling json.dumps 6 million times.
+
+And if you aren't in debug that is 6 million calls to a slow function (`json.dumps`) that are being made with absolutely zero benefit!
+
+The different levels of handlers for logging are great. They can save you processing time with their selectiveness and make your code easier to debug, but always remember: **the right hand does not know what the left hand is doing**.
 
