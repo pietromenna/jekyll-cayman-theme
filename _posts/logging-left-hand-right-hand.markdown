@@ -67,7 +67,7 @@ And now let's think about what the `__str__` function does. What if it does the 
 1. create a dictionary of 30 key/values pairs where key is some string and value is a locally held variable.
 2. creates a string of that dictionary with `json.dumps` (json formatting is ungodly slow in python)
 
-This is a pretty realistic example that you could easily run across. If that object is logged 6 times in a data processing pipeline and it is done for say 1 million objects, you now are calling json.dumps 6 million times.
+This is a pretty realistic example that you could easily run across. If that object is logged 6 times in a data processing pipeline and it is done for 1 million objects, you now are calling json.dumps 6 million times.
 
 And if you aren't in debug that is 6 million calls to a slow function (`json.dumps`) that are being made with absolutely zero benefit!
 
