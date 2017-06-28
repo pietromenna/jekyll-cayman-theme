@@ -13,16 +13,16 @@ A performance hit, even if small, is magnified when mulitplied by millions.
 
 Similarly, a logic error, even if minor, is magnified with multiplied by millions. 
 
-So, `debug(<some message>)` is liberally strewn throughout my code. With a command line or configuration change I can run a process with an log level of debug and get much better insight into what is going on. And this is great because when I'm not in debug mode I spend ~~no~~ negligible time on these debug statements. This satisfies both my requirements:
+So, `debug(<some message>)` is liberally strewn throughout my code. This is great because when I'm not in debug mode I spend ~~no~~ negligible time on these debug statements. This satisfies both my requirements:
 
 1. makes it easier to find errors
 2. keeps my code performant
 
 Right?
 
-Wrong! At least on the "keeps my code performant" part. If you aren't careful debug log statements, even when not in a debug mode, can eat large chunks of time. Here is why:
+Wrong! Debug log statements, even when not in a debug mode (ie. no handlers concerned with debug level), can eat large chunks of time. Here is why:
 
-A common case:
+Take this common case:
 
 ```python
 logger.debug("Processed %s, resulting in %s" % (some_str, str(list_of_objects))
@@ -43,7 +43,9 @@ In the above examples, the left hand side does not format unless one of the log 
 
 The right side, though, is a problem.
 
-Whether or not the left side gets processed, the right side does. The arguments for the formatting get processed. This isn't a big deal if it is basic primatives, such as:
+Whether or not the left side gets processed, the right side does. The arguments for the formatting get processed. In the above examples, `some_str` isn't a big deal, but `str(list_of_objects)` could be. 
+
+Basic primatives are not a problem:
 
 ```python
 logger.debug("I'm logging some dumb stuff like %d and %s", 1, 'a')
@@ -55,7 +57,7 @@ But it is a problem if the right hand side is more complex, such as:
 logger.debug("I'm logging a really big list comprehension as a string: %s" % str(x for x in range(1000000)))
 ```
 
-I know. I hear you. You are saying, "who the hell would ever log a list comprehension like that?" It's illustrative. Let's take a more realistic example.
+But who the hell would ever log a list comprehension like that? It's illustrative. Let's take a more realistic example.
 
 ```python
 logger.debug("I'm logging a custom object with its own __str__ function: %s" % str(custom_object_instance))
