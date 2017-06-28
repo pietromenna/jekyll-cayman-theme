@@ -60,7 +60,7 @@ logger.debug("I'm logging a really big list comprehension as a string: %s" % str
 But who the hell would ever log a list comprehension like that? It's illustrative. Let's take a more realistic example.
 
 ```python
-logger.debug("I'm logging a custom object with its own __str__ function: %s" % str(custom_object_instance))
+logger.debug("I'm logging a custom object with its own __str__ method: %s" % str(custom_object_instance))
 ```
 
 And now let's think about what the `__str__` function does. What if it does the following:
