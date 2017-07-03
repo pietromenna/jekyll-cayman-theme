@@ -1,13 +1,15 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        Damn Dirty Dev
+tagline:      Sometimes I take shortcuts. Sometimes they work out. Sometimes they are very, very dirty.
 baseurl:      ""
 paginate:     1
 
+excerpt_separator: "<!--more-->"
+
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       Peter Nabicht
+  url:        https://nabicht.com 
 
 # Gems
 gems:
