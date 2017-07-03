@@ -3,9 +3,8 @@ layout: default
 title:  "Right Hand Doesn't Know What the Left Hand is Doing"
 date:   2017-07-03 11:21:00
 categories: python performance
+abstract: in which I point out a source of latency most people never think about when it comes to logging
 ---
-
-_(in which I point out a source of latency most people never think about when it comes to logging)_
 
 I do a lot of data analysis in python processing and analyzing (with many different metrics) million of records at a time.
 
