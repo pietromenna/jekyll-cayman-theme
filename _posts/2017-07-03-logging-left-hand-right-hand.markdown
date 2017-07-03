@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "Right Hand Doesn't Know What the Left Hand is Doing"
-date:   2017-06-28 12:00:00
-categories: python
+date:   2017-07-03 11:21:00
+categories: python performance
 ---
 
 _(in which I point out a source of latency most people never think about when it comes to logging)_
