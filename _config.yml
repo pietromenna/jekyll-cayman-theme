@@ -1,13 +1,13 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        Kartikey Agrawal
+tagline:      3D artist, game developer and electronics enthisiast
 baseurl:      ""
 paginate:     1
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       Kartikey Agrawal
+  url:        http://kartikey0303.github.io
 
 # Gems
 gems:
