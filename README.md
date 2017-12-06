@@ -4,13 +4,13 @@ This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub P
 
 Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
 
-You can preview the theme at http://jasonlong.github.io/cayman-theme or with real content at http://jasonlong.github.io/geo_pattern.
+You can preview the theme at https://jasonlong.github.io/cayman-theme or with real content at https://jasonlong.github.io/geo_pattern.
 
-![](http://cl.ly/image/1T3r3d18311V/content)
+![](https://cl.ly/image/1T3r3d18311V/content)
 
 # How to use it?
 
-Download the theme @ http://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+Download the theme @ https://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
 
 Unzip it and use it as a regular jekyll folder.
 
@@ -43,7 +43,7 @@ Some important configuration can be done in the file `_config.yml`. Please, chec
 
 ## baseurl
 
-`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: http://pietromenna.github.io/jekyll-cayman-theme
+`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: https://pietromenna.github.io/jekyll-cayman-theme
 
 In the case above the baseurl should be set to "/jekyll-cayman-theme".
 
@@ -61,9 +61,9 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 
 # License
 
-This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) license.
+This work is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
 
-[1]: http://jekyllrb.com/
+[1]: https://jekyllrb.com/
 [2]: https://github.com/jasonlong
-[3]: http://pages.github.com/
+[3]: https://pages.github.com/
 [4]: https://github.com/jasonlong/cayman-theme
