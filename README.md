@@ -51,7 +51,7 @@ In the case the site sits in the root, you can leave `baseurl` as empty "".
 
 # Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenn/jekyll-cayman-theme.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenna/jekyll-cayman-theme.
 
 # Development
 
